@@ -12,7 +12,9 @@ import os
 
 app = Flask(__name__)
 
-app.config['SECRET_KEY'] = os.environ["MAPPING_SECRET_KEY"]
+# app.config['SECRET_KEY'] = os.environ["MAPPING_SECRET_KEY"]
+app.config['SECRET_KEY'] = '19893sudifna08329kjsnad0fwqjaew9f8as9dfya98sdhf9ahsd9fha9sdf8'
+
 
 
 # Creating a function to handle my geocoder errors
@@ -60,4 +62,4 @@ def index():
 
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=False)

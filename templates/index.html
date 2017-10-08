@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="static/leaflet-routing-machine.css" />
-    <script src="static/leaflet-routing-machine.js"></script>
+    <link rel="stylesheet" href="https://s3.amazonaws.com/www.wills-mapping-app-static-files.com/leaflet-routing-machine.css">
+    <script src="https://s3.amazonaws.com/www.wills-mapping-app-static-files.com/leaflet-routing-machine.js"></script>
+
+
 </head>
 <body>
     <div class="site-wrapper">
@@ -70,7 +72,7 @@
         var layer = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
             maxZoom: 20,
-            minZoom: 10,
+            minZoom: 5,
         }).addTo(map);
 
         var start_marker = L.marker([{{ start_lat }}, {{ start_lng }}]);
